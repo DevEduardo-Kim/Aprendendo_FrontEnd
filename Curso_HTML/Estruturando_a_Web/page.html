@@ -1,83 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MDN Docs - Estudo Sobre a Estrutura Web</title>
 </head>
 <body>
-    <header>
-        <figure>
-            <img src="" alt="logo da loja">
-        </figure>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Menu</li>
-                <li>Contact</li>
+    <header class="site-header">
+        
+        <img src="https://placehold.co/120x40" alt="logo da loja">
+        
+        <nav class="main-nav" aria-label="principal">
+            <ul class="main-nav__list">
+                <li><a class="main-nav__link" href="http://">Home</a></li>
+                <li><a class="main-nav__link" href="http://">About</a></li>
+                <li><a class="main-nav__link" href="http://">Menu</a></li>
+                <li><a class="main-nav__link" href="http://">Contacts</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Bem-vindo !</h1>
-            <h2>Aproveite tudo o que tiver aqui.</h2>
-            <div>
+        <section id="Hero">
+            <h1 class="hero__title-primary">Bem-vindo !</h1>
+            <p class="hero__title-secondary">
+                <strong>Aproveite tudo o que tiver aqui.</strong>
+            </p>
+            <div class="hero-btn">
                 <button type="button">Veja Mais</button>
             </div>
         </section>
-        <section>
+        <section id="About" class="About">
             <h2>About</h2>
-            <h3>Primeiro Artigo da Página</h3>
+            <p>Primeira Vez Conversando Com Vocês</p>
             <p>
                 O artigo de boas-vindas , onde te dou as boas-vindas para essa primeira página HTMl. 
             </p>
         </section>
-        <section>
+        <section id="Menu">
             <h2>Menu</h2>
-            <div>
-                <article>
-                    <h4>Produto 1</h4>
+            <div class="grid__layout-container">
+                <article class="grid_card">
+                    <h3>Produtos Exemplo</h3>
                     <p>R$10,00</p>
                     <button type="button">Ver Mais</button>
                 </article>
-                <article>
-                    <h4>Produto 1</h4>
+                <article class="grid_card">
+                    <h3>Produtos Exemplo</h3>
                     <p>R$10,00</p>
                     <button type="button">Ver Mais</button>
                 </article>
-                <article>
-                    <h4>Produto 1</h4>
+                <article class="grid_card">
+                    <h3>Produtos Exemplo</h3>
                     <p>R$10,00</p>
                     <button type="button">Ver Mais</button>
                 </article>
-                <article>
-                    <h4>Produto 1</h4>
+                <article class="grid_card">
+                    <h3>Produtos Exemplo</h3>
                     <p>R$10,00</p>
                     <button type="button">Ver Mais</button>
                 </article>
             </div>
         </section>
-        <section>
+        <section id="Contact">
             <h2>Entre em Contato</h2>
-            <article>
-                <ul>
+            <ul>
                     <li>
-                        <button type="button">WhatsApp</button>
+                        <a href="http://">Whatsapp</a>
                     </li>
                     <li>
-                        <button type="button">Shopee</button>
+                        <a href="http://">Shopee</a>
                     </li>
                     <li>
-                        <button type="button">Amazon</button>
+                        <a href="http://">Amazon</a>
                     </li>
                 </ul>
-            </article>
         </section>
     </main>
     <footer>
-       
+        <p>&copy; Eduardo Kim - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
